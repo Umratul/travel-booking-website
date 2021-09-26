@@ -1,21 +1,25 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './CountryDetails.css'
 
 const CountryDetails = (props) => {
     console.log(props.country);
-    const { country, capital, img, price,details } = props.country;
+    const element = <FontAwesomeIcon icon={faShoppingCart} />
+    const { name, capital, img, price,rating,days } = props.country;
     return (
         <div className='countryDetails-container'>
 
             <img src={img} alt="" />
-            <h4>{country}</h4>
-            <h4>{capital}</h4>
-            <p>Price: {price}</p>
+            <h4 className='destination'>Destination: {name}</h4>
+            <p>Capital: {capital}</p>
+            <p>Package: {days}</p>
+            <h5>Price: ${price}</h5>
+            <p>Rating: {rating}</p>
             <button
                 onClick={() => props.handleCart(props.country)}
                 className='cart-btn'>
-                add to cart</button>
-
+                {element}add to cart</button>
         </div>
     );
 };

@@ -1,15 +1,25 @@
 .countryDetails-container{
-    background-color: aqua;
+    background-color: rgb(187, 228, 228);
     margin:10px;
+    padding: 10px;
+    border: 5px solid darkblue;
+    border-radius: 10px;
 }
 .countryDetails-container img{
-    width: 200px;
+    height: 200px;
+    width: 270px;
+    
 }
 .cart-btn{
-    background-color: goldenrod;
+    background-color: rgb(92, 32, 82);
+    color: white;
     width: 150px;
     height: 25px;
     border: 1px solid gray;
     border-radius: 5px;
     cursor: pointer;
+}
+.destination{
+    color:rgb(177, 51, 51);
+    font-size: 25px;
 }

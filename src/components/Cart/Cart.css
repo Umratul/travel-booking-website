@@ -1,0 +1,11 @@
+.cart-info{
+    background-color: rgb(250, 184, 230);
+    /* color:white; */
+    margin:10px;
+    padding: 10px;
+    border: 3px solid rgb(156, 15, 102);
+    border-radius: 10px;
+}
+.country-name{
+    display: block;
+}
