@@ -1,0 +1,15 @@
+.countryDetails-container{
+    background-color: aqua;
+    margin:10px;
+}
+.countryDetails-container img{
+    width: 200px;
+}
+.cart-btn{
+    background-color: goldenrod;
+    width: 150px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
