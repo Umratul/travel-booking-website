@@ -13,6 +13,7 @@ const Cart = (props) => {
         total = total + country.price;
     }
     return (
+        // section for the cart
         <div className='cart-info'>
             <h2>Booking Details</h2>
             <h5>Booked: {props.cart.length}</h5>

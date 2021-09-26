@@ -8,8 +8,9 @@ const CountryDetails = (props) => {
     const element = <FontAwesomeIcon icon={faShoppingCart} />
     const { name, capital, img, price,rating,days } = props.country;
     return (
+        // section for showing the country details
         <div className='countryDetails-container'>
-
+            
             <img src={img} alt="" />
             <h4 className='destination'>Destination: {name}</h4>
             <p>Capital: {capital}</p>
