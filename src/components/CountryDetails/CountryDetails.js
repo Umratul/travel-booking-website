@@ -11,7 +11,10 @@ const CountryDetails = (props) => {
             <h4>{country}</h4>
             <h4>{capital}</h4>
             <p>Price: {price}</p>
-            <button className='cart-btn'>add to cart</button>
+            <button
+                onClick={() => props.handleCart(props.country)}
+                className='cart-btn'>
+                add to cart</button>
 
         </div>
     );
